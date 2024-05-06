@@ -1,11 +1,12 @@
 Step 1: Launch 2 instances with the following configuration:
 *************************************************************
- machine1, t2.medium
- machine2, t2.micro 
+ Master node, t2.medium
+ Worker node, t2.micro 
 
 Step2 To Install Kubernetes use the following commands:
 ***********************************************************
-On Master & worker node
+On Master & worker node  --->
+________________________
 sudo su
 apt-get update  
 apt-get install docker.io -y
@@ -21,7 +22,7 @@ Step 3)On Master:
 *********************
 kubeadm init --ignore-preflight-errors=all
 
-Copy the token and paste it into the worker node.
+   [Copy the token and paste it into the worker node.]
 
 Step 4) On Master: 
 ********************
