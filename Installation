@@ -31,7 +31,8 @@ Step 4) On Master:
     sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
     sudo chown $(id -u):$(id -g) $HOME/.kube/config
 
-Note: In case we want to retrieve the join token use the below-mentioned command.
+Note: In case  to retrieve the join token use the below-mentioned command:
+_________________________________________________________________________
  kubeadm token create --print-join-command
  
 Step 5) On Master:
